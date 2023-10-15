@@ -1,0 +1,457 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231015220059">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231015220059">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20231015220059"></script>
+    <script defer src="js/app.min.js?_v=20231015220059"></script>
+    <title>Главная</title>
+</head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="header__row">
+        <a data-scroll="intro" href="index.html" class="header__logo">
+            <img src="img/svgicons/logo.svg" alt="logo">
+        </a>
+        <div class="header__burger">
+            <span></span>
+        </div>
+        <div class="header__menu">
+            <div class="header__links">
+                <a data-scroll="outsourcing" href="#">Аутсорсинг</a>
+                <a data-scroll="how" href="#">Как мы работаем</a>
+                <a data-scroll="advantages" href="#">Преимущества</a>
+                <a data-scroll="vacancies" href="#">Вакансии</a>
+                <a data-scroll="services" href="#services">Услуги</a>
+                <a data-scroll="faq" href="#">FAQ</a>
+            </div>
+            <a href="tel:+7(922) 113 20 03" class="header__phone">
+                <svg>
+                    <use xlink:href="#phone"></use>
+                </svg>
+                <p>+7(922)-113-20-03</p>
+            </a>
+            <a data-scroll="form" class="header__btn btn">Обратный звонок</a>
+        </div>
+    </div>
+</header>
+<svg display="none">
+    <symbol id="phone" viewBox="0 0 24 24">
+        <g>
+            <path id="Icon" d="M5.00029 9.86053C6.91669 14.0344 10.3267 17.3529 14.5662 19.1519L15.2458 19.4547C16.8006 20.1475 18.6284 19.6212 19.5767 18.2077L20.4648 16.884C20.7536 16.4536 20.6656 15.8739 20.2623 15.5485L17.2504 13.1187C16.8081 12.7618 16.1575 12.845 15.8191 13.3016L14.8874 14.5589C12.4966 13.3795 10.5555 11.4385 9.37619 9.04768L10.6334 8.11596C11.0901 7.77754 11.1732 7.12702 10.8163 6.68464L8.38647 3.6727C8.06112 3.26942 7.48162 3.18145 7.05125 3.47002L5.71841 4.36372C4.29607 5.31742 3.77269 7.16027 4.48142 8.71922L4.99951 9.85884L5.00029 9.86053Z"/>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="mail" viewBox="0 0 20 16">
+        <g>
+            <path d="M5.28924 0.907491C8.42388 0.635003 11.5763 0.635003 14.7109 0.907491L16.2211 1.03877C17.2265 1.12617 18.0876 1.72584 18.5337 2.58361C18.5908 2.69335 18.548 2.82621 18.4428 2.89132L12.1769 6.77024C10.833 7.60216 9.1385 7.61962 7.77778 6.81556L1.46995 3.0882C1.36804 3.02798 1.32126 2.90402 1.36719 2.79492C1.77535 1.82536 2.69298 1.13318 3.77901 1.03877L5.28924 0.907491Z"/>
+            <path d="M1.36206 4.76676C1.20609 4.6746 1.00709 4.77377 0.988912 4.95402C0.735176 7.46965 0.796587 10.0091 1.17314 12.5132C1.37166 13.8333 2.44907 14.8454 3.77901 14.961L5.28924 15.0923C8.42388 15.3647 11.5763 15.3647 14.7109 15.0923L16.2211 14.961C17.5511 14.8454 18.6285 13.8333 18.827 12.5132C19.2145 9.93613 19.2683 7.32162 18.9882 4.73415C18.9686 4.55264 18.7662 4.45529 18.611 4.55139L12.9664 8.04564C11.1482 9.17118 8.85566 9.19479 7.01468 8.10695L1.36206 4.76676Z"/>
+        </g>
+    </symbol>
+</svg>
+
+            <main class="content">
+                <section class="intro section">
+                    <div class="container">
+                        <div class="intro__row">
+                            <h1>Профессиональный аутсорсинг для вашего бизнеса</h1>
+                            <h2 class="subtitle">Доверьте нам задачи, чтобы сосредоточиться на росте и развитии вашего бизнеса</h2>
+                            <a data-scroll="form" href="#" class="intro__btn btn">Заполнить анкету</a>
+                        </div>
+                        <picture><source srcset="img/intro/bg.webp" type="image/webp"><img class="intro__bg" src="img/intro/bg.webp"></picture>
+                    </div>
+                </section>
+                <section class="outsourcing section">
+                    <div class="container">
+                        <div class="outsourcing__row">
+                            <div class="outsourcing__img">
+                                <picture><source srcset="img/outsourcing/bg.webp" type="image/webp"><img src="img/outsourcing/bg.webp" alt="outsourcing-bg"></picture>
+                            </div>
+                            <div class="outsourcing__info">
+                                <h2 class="title">Аутсорсинг персонала</h2>
+                                <p class="subtitle">Аутсорсинг персонала - это передача функций найма, обучения и управления персоналом третьей стороне или внешнему поставщику услуг</p>
+                                <ul class="outsourcing__list">
+                                    <li>
+                                        <img src="img/svgicons/outsourcing-1.svg" alt="outsourcing-list">
+                                        <p>Максимизируйте эффективность вашего бизнеса, нанимая квалифицированный персонал на аутсорсинг</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/svgicons/outsourcing-2.svg" alt="outsourcing-list">
+                                        <p>Экономьте время и ресурсы, позволяя нам заботиться о найме, обучении и управлении персоналом</p>
+                                    </li>
+                                    <li>
+                                        <img src="img/svgicons/outsourcing-3.svg" alt="outsourcing-list">
+                                        <p>Доверьтесь профессионалам и сфокусируйтесь на развитии вашего бизнеса</p>
+                                    </li>
+                                </ul>
+                                <a data-scroll="form" href="#" class="btn">Оставить заявку</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="how section">
+                    <div class="container">
+                        <h2 class="title">Как мы работаем</h2>
+                        <div class="how__row">
+                            <article class="how__step card">
+                                <div class="card-title">Анализ</div>
+                                <div class="subtitle">Мы начинаем с тщательного анализа ваших потребностей</div>
+                            </article>
+                            <article class="how__step card">
+                                <div class="card-title">Команда</div>
+                                <div class="subtitle">Подбираем опытных специалистов, обеспечиваем их обучение и управляем всеми аспектами процесса</div>
+                            </article>
+                            <article class="how__step card">
+                                <div class="card-title">Гарантии</div>
+                                <div class="subtitle">Мы гарантируем прозрачность, эффективность и качество в каждом шаге нашей работы</div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section class="advantages section">
+                    <div class="container">
+                        <header class="advantages__header">
+                            <div class="advantages__info">
+                                <h2 class="title">Наши преимущества</h2>
+                                <p class="subtitle">Максимизируем эффективность вашего бизнеса через аутсорсинг</p>
+                                <a data-scroll="form" href="#" class="btn">Оставить заявку</a>
+                            </div>
+                            <div class="advantages__img">
+                                <picture><source srcset="img/advantages/bg.webp" type="image/webp"><img src="img/advantages/bg.webp" alt="advantages-bg"></picture>
+                            </div>
+                        </header>
+                        <main class="advantages__row">
+                            <article class="advantages__advantage card">
+                                <div class="card-title">
+                                    Опытные специалисты
+                                </div>
+                                <p class="subtitle">Мы имеем широкий опыт и экспертизу в области аутсорсинга, что позволяет нам эффективно решать задачи и достигать поставленных целей</p>
+                                <picture><source srcset="img/advantages/item-1.webp" type="image/webp"><img src="img/advantages/item-1.webp" alt="item-1"></picture>
+                            </article>
+                            <article class="advantages__advantage card">
+                                <div class="card-title">
+                                    Прозрачность
+                                </div>
+                                <p class="subtitle">Наша команда стремится к достижению максимальной эффективности во всех проектах, чтобы обеспечить оптимальные результаты для клиентов</p>
+                                <picture><source srcset="img/advantages/item-2.webp" type="image/webp"><img src="img/advantages/item-2.webp" alt="item-2"></picture>
+                            </article>
+                            <article class="advantages__advantage card">
+                                <div class="card-title">
+                                    Эффективность
+                                </div>
+                                <p class="subtitle">Наша команда стремится к достижению максимальной эффективности во всех проектах, чтобы обеспечить оптимальные результаты для клиентов</p>
+                                <picture><source srcset="img/advantages/item-3.webp" type="image/webp"><img src="img/advantages/item-3.webp" alt="item-3"></picture>
+                            </article>
+                            <article class="advantages__advantage card">
+                                <div class="card-title">
+                                    Индивидуальный подход
+                                </div>
+                                <p class="subtitle">Мы всегда адаптируем наши услуги под уникальные потребности каждого клиента, чтобы обеспечить наилучшее соответствие их требованиям</p>
+                                <picture><source srcset="img/advantages/item-4.webp" type="image/webp"><img src="img/advantages/item-4.webp" alt="item-4"></picture>
+                            </article>
+                        </main>
+                    </div>
+                </section>
+                <section class="vacancies section">
+                    <div class="container">
+                        <h2 class="title">Вакансии</h2>
+                        <p class="subtitle">Вы хотите поменять место работы или полностью сменить род деятельности?</p>
+                        <div class="vacancies__row">
+                            <article class="vacancies__vacancy card">
+                                <header class="card-title">
+                                    Оператор склада
+                                </header>
+                                <main class="vacancy__body">
+                                    <div class="subtitle">Работа с терминалом ТСД в зависимости от операции: подбор, размещение товара</div>
+                                    <div class="subtitle">Развоз персонала</div>
+                                    <div class="subtitle">Бесплатный обед, спецодежда</div>
+                                </main>
+                                <footer class="vacancies__footer">
+                                    <div class="vacancies__price">
+                                        <b>От 2500</b>
+                                        руб./смена
+                                    </div>
+                                    <a href="#" class="btn">
+                                        <img src="img/svgicons/right-arrow.svg" alt="arrow-right">
+                                    </a>
+                                </footer>
+                            </article>
+                            <article class="vacancies__vacancy card">
+                                <header class="card-title">
+                                    Работник торгового зала
+                                </header>
+                                <main class="vacancy__body">
+                                    <div class="subtitle">Порядок в торговом зале</div>
+                                    <div class="subtitle">
+                                        День с 08.00-20.00
+                                        <br>
+                                        Ночь с 20.00-08.00
+                                    </div>
+                                </main>
+                                <footer class="vacancies__footer">
+                                    <div class="vacancies__price">
+                                        <b>От 190</b>
+                                        руб./час
+                                    </div>
+                                    <a href="#" class="btn">
+                                        <img src="img/svgicons/right-arrow.svg" alt="arrow-right">
+                                    </a>
+                                </footer>
+                            </article>
+                            <article class="vacancies__vacancy card">
+                                <header class="card-title">
+                                    Грузчик
+                                </header>
+                                <main class="vacancy__body">
+                                    <div class="subtitle">Погрузо -разгрузочные работы</div>
+                                    <div class="subtitle">
+                                        День с 08.00-20.00
+                                        <br>
+                                        Ночь с 20.00-08.00
+                                    </div>
+                                </main>
+                                <footer class="vacancies__footer">
+                                    <div class="vacancies__price">
+                                        <b>2500</b>
+                                        руб./смена
+                                    </div>
+                                    <a href="#" class="btn">
+                                        <img src="img/svgicons/right-arrow.svg" alt="arrow-right">
+                                    </a>
+                                </footer>
+                            </article>
+                            <article class="vacancies__vacancy card">
+                                <header class="card-title">
+                                    Комплектовщик
+                                </header>
+                                <main class="vacancy__body">
+                                    <div class="subtitle">Приемка, сортировка и упаковка отсортированного товара</div>
+                                    <div class="subtitle">Выполнение заданий по терминалам сбора данных</div>
+                                    <div class="subtitle">
+                                        День с 08.00-20.00
+                                        <br>
+                                        Ночь с 20.00-08.00
+                                    </div>
+                                </main>
+                                <footer class="vacancies__footer">
+                                    <div class="vacancies__price">
+                                        <b>3000</b>
+                                        руб./смена
+                                    </div>
+                                    <a href="#" class="btn">
+                                        <img src="img/svgicons/right-arrow.svg" alt="arrow-right">
+                                    </a>
+                                </footer>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section id="services" class="services section">
+                    <div class="container">
+                        <h2 class="title">Услуги в сфере персонала</h2>
+                        <div class="services__row one">
+                            <article title="Подбор персонала" class="services__service card">
+                                <div class="services__body">
+                                    <div class="card-title">Подбор персонала</div>
+                                    <div class="subtitle">Мы предоставляем услуги профессионального подбора персонала, помогая найти опытных и квалифицированных специалистов для вашей компании. наша команда экспертов тщательно анализирует ваши потребности и проводит глубокое исследование рынка труда, чтобы найти наиболее подходящих кандидатов. мы гарантируем высокий уровень профессионализма и эффективность в процессе подбора персонала, чтобы помочь вам достичь успеха в вашем бизнесе</div>
+                                    <div class="services__hide">
+                                        <div class="subtitle">У нас есть специализированные рекрутинговые решения для различных категорий сотрудников: подбор постоянного персонала, проектный подбор, аутсорсинг рекрутмента "под ключ", централизованный подбор кадров и аутплейсмент. Мы учитываем требования вашего бизнеса и предлагаем оптимальные решения.</div>
+                                        <div class="subtitle">Мы работаем с работодателями и топ-менеджерами, специалистам начального и высокого уровней, персоналом рабочих специальностей.</div>
+                                        <div class="subtitle">
+                                            <b>Преимущества для вас</b>
+                                        </div>
+                                        <ul>
+                                            <li>Сотрудничество с нами откроет новые возможности развития вашей команды и управления персоналом для оптимального решения ваших бизнес-задач:</li>
+                                            <li>Оперативное предоставление кандидатов всего за 3 дня</li>
+                                            <li>Поддержка и помощь без выходных</li>
+                                            <li>Организация всех этапов собеседований</li>
+                                            <li>Консультации экспертов по рынку труда</li>
+                                            <li>Поддержка проектов на территории СНГ</li>
+                                            <li>Прозрачная и предсказуемая стоимость услуг: процент от годового дохода кандидата</li>
+                                            <li>Выставление счета в день выхода кандидата на работу</li>
+                                            <li>Гарантии замены кандидатов при необходимости</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="services__img">
+                                    <picture><source srcset="img/services/item-1.webp" type="image/webp"><img src="img/services/item-1.webp" alt="item-1"></picture>
+                                </div>
+                                <div class="services__btn btn">Подробнее</div>
+                            </article>
+                            <article title="Формирование команд на склад и производство" class="services__service card">
+                                <div class="services__body">
+                                    <div class="card-title">Формирование команд на склад и производство</div>
+                                    <div class="subtitle">Подбор рабочего персонала - это одно из приоритетных направлений деятельности Рабочего легиона. Мы сформируем профессиональный кадровый состав специально для вашего бизнеса, ориентированный на выполнение всех поставленных задач.</div>
+                                    <div class="services__hide">
+                                        <div class="subtitle">В нашей компании процесс формирования проектных команд полностью автоматизирован. Мы используем нашу базу кандидатов и методы массового и точечного подбора персонала. Наши услуги помогут вам снизить нагрузку на отдел подбора и кадров, а также рационально использовать рабочее время предприятия. Работа сотрудников остается под нашим контролем, чтобы вы могли сосредоточиться на основной области деятельности.</div>
+                                        <div class="subtitle">
+                                            <b>Мы помогаем с рекрутированием:</b>
+                                        </div>
+                                        <ul>
+                                            <li>Разнорабочих</li>
+                                            <li>Грузчиков</li>
+                                            <li>Комплектовщиков</li>
+                                            <li>Водителей складской техники</li>
+                                            <li>Рабочих в цех производства</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="services__img">
+                                    <picture><source srcset="img/services/item-2.webp" type="image/webp"><img src="img/services/item-2.webp" alt="item-2"></picture>
+                                </div>
+                                <div class="services__btn btn">Подробнее</div>
+                            </article>
+                            <article title="Производственно-складской аутсорсинг" class="services__service card">
+                                <div class="services__body">
+                                    <div class="card-title">Производственно-складской аутсорсинг</div>
+                                    <div class="subtitle">Логистическая услуга, которая поможет подготовить ваш товар к продаже, с момента его прибытия на склад до момента отгрузки расфасованной и укомплектованной партии в розничную точку.</div>
+                                    <div class="services__hide">
+                                        <div class="subtitle">Мы организуем логистические процессы на складах любого масштаба и загруженности. Мы предлагаем отдельные складские услуги и комплексное управление движением товарно-материальных ценностей. Ваша компания найдет у нас оптимальный формат сотрудничества, выгодный и эффективный.</div>
+                                        <div class="subtitle">
+                                            <b>Мы предоставляем обширное направление нашей деятельности:</b>
+                                        </div>
+                                        <ul>
+                                            <li>Комплексный аутсорсинг логистики</li>
+                                            <li>Управление запасами</li>
+                                            <li>Консалтинговые услуги</li>
+                                            <li>Гарантированный результат</li>
+                                            <li>Аутсорсинг процессов складской логистики</li>
+                                            <li>Аутсорсинг сферы производства</li>
+                                            <li>Формирование команд на производство</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="services__img">
+                                    <picture><source srcset="img/services/item-3.webp" type="image/webp"><img src="img/services/item-3.webp" alt="item-3"></picture>
+                                </div>
+                                <div class="services__btn btn">Подробнее</div>
+                            </article>
+                            <article title="Аутсорсинг IT-разработчиков" class="services__service card">
+                                <div class="services__body">
+                                    <div class="card-title">Аутсорсинг IT-разработчиков</div>
+                                    <div class="subtitle">Эффективный аутсорсинг it-специалистов - оптимальное решение для вашей компании. мы предлагаем профессиональных экспертов, готовых взять на себя задачи по разработке, поддержке и обслуживанию it-инфраструктуры. сократите затраты и повысьте эффективность вашего it-отдела с нашей помощью.</div>
+                                    <div class="services__hide">
+                                        <div class="subtitle">
+                                            <b>Преимущества аутсорсинга разработчиков</b>
+                                        </div>
+                                        <ul>
+                                            <li>Сокращение времени и финансовых затрат до 25% на найм и содержание персонала</li>
+                                            <li>Выбор лучших ресурсов без географических ограничений</li>
+                                            <li>Быстрое масштабирование команды на любом этапе проекта</li>
+                                            <li>Доступ к экспертам, поиск которых в штат занимает месяцы</li>
+                                            <li>Слаженные проектные команды и готовая экспертиза в разных сферах</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="services__img">
+                                    <picture><source srcset="img/services/item-4.webp" type="image/webp"><img src="img/services/item-4.webp" alt="item-4"></picture>
+                                </div>
+                                <div class="services__btn btn">Подробнее</div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+                <section class="form section">
+                    <div class="container">
+                        <div class="form__row">
+                            <form action="#" class="form__form">
+                                <div class="title">Оставить заявку</div>
+                                <main class="form__inputs">
+                                    <input
+                                        class="input"
+                                        type="text"
+                                        type="text"
+                                        name="name"
+                                        placeholder="Ваше имя"
+                                    >
+                                    <input
+                                        class="input"
+                                        type="text"
+                                        type="tel"
+                                        name="tel"
+                                        placeholder="Ваш телефон"
+                                    >
+                                    <textarea class="input" name="message" placeholder="Ваше сообщение"></textarea>
+                                </main>
+                                <footer class="form__footer">
+                                    <label class="form__checkbox checkbox">
+                                        <input class="custom-checkbox" type="radio">
+                                        <p>Даю согласие на обработку персональных данных</p>
+                                    </label>
+                                    <button type="submit" class="btn">Отправить</button>
+                                </footer>
+                            </form>
+                            <div class="form__img">
+                                <picture><source srcset="img/form/bg.webp" type="image/webp"><img src="img/form/bg.webp" alt="form-bg"></picture>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="faq">
+                    <div class="container">
+                        <div class="title">Самые распространенные вопросы клиентов</div>
+                        <div class="faq__slides one">
+                            <article class="faq__item">
+                                <div class="faq__slide">Какие обязательства на себя берет аутсорсинговая компания?</div>
+                                <div class="faq__hide">
+                                    Аутсорсинговые компании предлагают услуги по поиску рабочей силы, необходимой в течение определенного периода времени. В отличие от обычных трудовых отношений, договоры аутсорсинга могут заключаться на любой срок, от нескольких дней до нескольких месяцев. Клиенты, использующие аутсорсинг, получают комплексное обслуживание и экономят на стоимости найма новых сотрудников. Такой способ работы обеспечивает стабильность для предпринимателей и владельцев бизнеса. Больничные, внеплановые отпуска, внезапные увольнения, текучесть кадров, нехватка рабочей силы - аутсорсинг может легко решить эти проблемы.
+                                </div>
+                            </article>
+                            <article class="faq__item">
+                                <div class="faq__slide">Кто отвечает за подготовку и оформление кадров при аутсорсинге?</div>
+                                <div class="faq__hide">
+                                    Аутсорсинговые компании предлагают услуги по поиску рабочей силы, необходимой в течение определенного периода времени. В отличие от обычных трудовых отношений, договоры аутсорсинга могут заключаться на любой срок, от нескольких дней до нескольких месяцев. Клиенты, использующие аутсорсинг, получают комплексное обслуживание и экономят на стоимости найма новых сотрудников. Такой способ работы обеспечивает стабильность для предпринимателей и владельцев бизнеса. Больничные, внеплановые отпуска, внезапные увольнения, текучесть кадров, нехватка рабочей силы - аутсорсинг может легко решить эти проблемы.
+                                </div>
+                            </article>
+                            <article class="faq__item">
+                                <div class="faq__slide">Как происходит подбор персонала при аутсорсинге?</div>
+                                <div class="faq__hide">
+                                    Аутсорсинговые компании предлагают услуги по поиску рабочей силы, необходимой в течение определенного периода времени. В отличие от обычных трудовых отношений, договоры аутсорсинга могут заключаться на любой срок, от нескольких дней до нескольких месяцев. Клиенты, использующие аутсорсинг, получают комплексное обслуживание и экономят на стоимости найма новых сотрудников. Такой способ работы обеспечивает стабильность для предпринимателей и владельцев бизнеса. Больничные, внеплановые отпуска, внезапные увольнения, текучесть кадров, нехватка рабочей силы - аутсорсинг может легко решить эти проблемы.
+                                </div>
+                            </article>
+                            <article class="faq__item">
+                                <div class="faq__slide">Когда без аутсорсинга персонала не обойтись?</div>
+                                <div class="faq__hide">
+                                    Аутсорсинговые компании предлагают услуги по поиску рабочей силы, необходимой в течение определенного периода времени. В отличие от обычных трудовых отношений, договоры аутсорсинга могут заключаться на любой срок, от нескольких дней до нескольких месяцев. Клиенты, использующие аутсорсинг, получают комплексное обслуживание и экономят на стоимости найма новых сотрудников. Такой способ работы обеспечивает стабильность для предпринимателей и владельцев бизнеса. Больничные, внеплановые отпуска, внезапные увольнения, текучесть кадров, нехватка рабочей силы - аутсорсинг может легко решить эти проблемы.
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <a data-scroll="intro" class="footer__logo">
+                <img src="img/svgicons/logo-white.svg" alt="logo-white">
+            </a>
+            <div class="footer__socials">
+                <a href="mailto:alexandra.aristova@mail.ru" class="footer__social">
+                    <svg>
+                        <use xlink:href="#mail"></use>
+                    </svg>
+                    <p>alexandra.aristova@mail.ru</p>
+                </a>
+                <a href="tel:+7(922) 113 20 03" class="footer__social">
+                    <svg>
+                        <use xlink:href="#phone"></use>
+                    </svg>
+                    <p>+7(922)-113-20-03</p>
+                </a>
+            </div>
+            <p class="footer__copy">© 2023 “Рабочий легион” - Все права защищены</p>
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </body>
+</html>

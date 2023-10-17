@@ -6,10 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231017205313">
-    <link rel="stylesheet" href="css/style.min.css?_v=20231017205313">
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20231017205313"></script>
-    <script defer src="js/app.min.js?_v=20231017205313"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20231017215818">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231017215818">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20231017215818"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js?_v=20231017215818"></script>
+    <script defer src="js/app.min.js?_v=20231017215818"></script>
     <title>Главная</title>
 </head>
 
@@ -25,7 +26,12 @@
         </div>
         <div class="header__menu">
             <div class="header__links">
-                <a data-scroll="outsourcing" href="#">Аутсорсинг</a>
+                <a
+                    data-scroll="outsourcing"
+                    href="#"
+                    class="wow bounce"
+                    data-wow-duration="2s"
+                >Аутсорсинг</a>
                 <a data-scroll="how" href="#">Как мы работаем</a>
                 <a data-scroll="advantages" href="#">Преимущества</a>
                 <a data-scroll="vacancies" href="#">Вакансии</a>
@@ -63,7 +69,7 @@
                     <div class="container">
                         <div class="intro__row">
                             <h1>Профессиональный аутсорсинг для вашего бизнеса</h1>
-                            <h2 class="subtitle">Доверьте нам задачи, чтобы сосредоточиться на росте и развитии вашего бизнеса</h2>
+                            <h2 class="subtitle wow fadeIn" data-wow-duration="2s">Доверьте нам задачи, чтобы сосредоточиться на росте и развитии вашего бизнеса</h2>
                             <a data-scroll="form" href="#" class="intro__btn btn">
                                 <p>Заполнить анкету</p>
                                 <div class="intro__right-arrow">
@@ -89,20 +95,20 @@
                                 <picture><source srcset="img/outsourcing/bg.webp" type="image/webp"><img src="img/outsourcing/bg.webp" alt="outsourcing-bg"></picture>
                             </div>
                             <div class="outsourcing__info">
-                                <h2 class="title">Аутсорсинг персонала</h2>
-                                <p class="subtitle">Аутсорсинг персонала - это передача функций найма, обучения и управления персоналом третьей стороне или внешнему поставщику услуг</p>
+                                <h2 class="title">Аутсорсинг бизнес-процессов</h2>
+                                <p class="subtitle">Аутсорсинг бизнес-процессов поможет вашей компании сосредоточиться на основной деятельности и достичь новых высот</p>
                                 <ul class="outsourcing__list">
                                     <li>
                                         <img src="img/svgicons/outsourcing-1.svg" alt="outsourcing-list">
-                                        <p>Максимизируйте эффективность вашего бизнеса, нанимая квалифицированный персонал на аутсорсинг</p>
+                                        <p>Повышение эффективности - аутсорсинг бизнес-процессов позволяет компании сосредоточиться на своей основной деятельности, в то время как наши профессионалы берут на себя выполнение рутиных и малоэффективных задач</p>
                                     </li>
                                     <li>
                                         <img src="img/svgicons/outsourcing-2.svg" alt="outsourcing-list">
-                                        <p>Экономьте время и ресурсы, позволяя нам заботиться о найме, обучении и управлении персоналом</p>
+                                        <p>Оптимизация процессов - наши специалисты проводят анализ и оптимизацию существующих процессов и внедряют эффективные решения для повышения производительности и качества работы</p>
                                     </li>
                                     <li>
                                         <img src="img/svgicons/outsourcing-3.svg" alt="outsourcing-list">
-                                        <p>Доверьтесь профессионалам и сфокусируйтесь на развитии вашего бизнеса</p>
+                                        <p>Экономия ресурсов - аутсорсинг бизнес-процессов позволяет сократить затраты на персонал, оборудование и инфраструктуру</p>
                                     </li>
                                 </ul>
                                 <a data-scroll="form" href="#" class="btn">Оставить заявку</a>
@@ -464,6 +470,8 @@
         </div>
     </div>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js?_v=20231017215818"></script>
+<script>new WOW().init();</script>
 
         </div>
     </body>
